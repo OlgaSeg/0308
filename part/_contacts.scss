@@ -1,0 +1,6 @@
+.contacts
+    {
+        @include for_section_universal(512px);
+        @include for_section_color($color-siren,$color-white);
+        
+    }

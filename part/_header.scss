@@ -1,0 +1,5 @@
+.header{
+        padding:$insert 0;
+        background-image: linear-gradient(to right, $color-bordo, $color-blue );
+        @include for_section_universal(512px);
+    }
