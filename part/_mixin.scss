@@ -14,13 +14,21 @@
                    repeat:no-repeat;
                    position:top center;
                    size:cover;
-
                }
 }
-@mixin for_section_universal( $height)
+%for_section_universal
 {
     padding: $insert 0;
-    display: flex;
-    min-height: $height;
-    
+    display: flex;   
+    min-height: 512px;  
+}
+@mixin table{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+@mixin phone{
+    @media screen and (max-width:515px){
+        @content;
+    }
 }

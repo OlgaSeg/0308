@@ -1,6 +1,6 @@
-.about
-{
-    @include for_section_universal(512px);
-    @include for_section_color($color-white,$color-blue);
-    
-}
+    .about
+    {
+        @extend %for_section_universal;
+        @include for_section_color($color-white,$color-blue);
+        
+    }

@@ -1,5 +1,5 @@
-.apps2
+.apps1
 {
-@include for_section_universal(512px);
-@include for_section_img($color-siren, 'images/apps2.jpeg');
+@extend %for_section_universal;
+@include for_section_img($color-white, 'images/apps2.jpeg');
 }

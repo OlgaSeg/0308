@@ -1,5 +1,54 @@
 .header{
-        padding:$insert 0;
         background-image: linear-gradient(to right, $color-bordo, $color-blue );
-        @include for_section_universal(512px);
+        @extend %for_section_universal; 
+        padding:$insert/2 0;
+
+        .container
+        {
+            flex-direction: column;
+        }
+
+            &__top{
+                border-bottom: 1px solid $color-white;
+                @include table{
+                    border-bottom:none;
+                    flex-direction: column;
+                }
+                @include phone{
+                    border-bottom:none;
+                }
+                display:flex;
+                justify-content: space-between;
+            }
+
+            &__menu
+            {
+                flex-basis: 50%;
+            }
+
+            &__description{
+                color: $color-white;
+            }
+
+            &__logo{
+                @include table {
+                    border-bottom:1px solid $color-white;
+                }
+            }
+            &__items{
+                display:flex;
+                list-style-type: none;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-family: Abel, sans-serif;
+                color: $color-white;
+                line-height: 24px;
+                display:flex;
+                justify-content: space-between;
+            }
+
+            &__item{
+                
+                
+            }
     }

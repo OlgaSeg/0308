@@ -1,6 +1,6 @@
 .footer
     {
-        @include for_section_universal(512px);
+        @extend %for_section_universal;
         @include for_section_color($color-white,$color-blue);
-        
+        min-height: 512px / 2;
     }
