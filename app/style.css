@@ -14,7 +14,8 @@ body {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  letter-spacing: 10%; }
 
 .container {
   width: 95%;
@@ -25,6 +26,13 @@ body {
 a {
   color: inherit;
   text-decoration: none; }
+
+h2 {
+  font-size: 36px;
+  line-height: 24px;
+  padding: 0 0 20px;
+  text-transform: uppercase;
+  font-weight: 400; }
 
 .header {
   background-image: linear-gradient(to right, #7F2F4A, #384C85);
@@ -43,12 +51,25 @@ a {
       .header__top {
         border-bottom: none; } }
   .header__menu {
-    flex-basis: 50%; }
-  .header__description {
-    color: #FFFFFF; }
-  @media screen and (max-width: 768px) {
-    .header__logo {
-      border-bottom: 1px solid #FFFFFF; } }
+    flex-basis: 40%; }
+    @media screen and (max-width: 768px) {
+      .header__menu {
+        width: 70%;
+        margin: 15px auto; } }
+    @media screen and (max-width: 515px) {
+      .header__menu {
+        display: none; } }
+  .header__description h1 {
+    color: #FFFFFF;
+    line-height: 75px;
+    font-size: 50px;
+    font-weight: 400; }
+  .header__logo {
+    padding-bottom: 50px; }
+    @media screen and (max-width: 768px) {
+      .header__logo {
+        border-bottom: 1px solid #FFFFFF;
+        text-align: center; } }
   .header__items {
     display: flex;
     list-style-type: none;
@@ -59,10 +80,34 @@ a {
     line-height: 24px;
     display: flex;
     justify-content: space-between; }
+  .header__item a {
+    display: block;
+    padding: 0 0 20px; }
+  .header__item::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #FFFFFF;
+    transform: scaleX(0);
+    transition-property: transform;
+    transition-duration: 0.5s; }
+  .header__item:hover::after {
+    transform: scaleX(1); }
 
 .about {
-  background-color: #384C85;
-  color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #384C85; }
+  .about .container {
+    justify-content: space-between; }
+    @media screen and (max-width: 515px) {
+      .about .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    .about .container h2 {
+      color: #551A8B; }
+  .about__item {
+    width: 45%;
+    color: #384C85; }
 
 .apps1 {
   color: #FFFFFF;
