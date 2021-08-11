@@ -1,0 +1,5 @@
+.apps1
+{
+@extend %for_section_universal;
+@include for_section_img($color-white, 'images/about.jpeg');
+}

@@ -1,0 +1,34 @@
+@mixin for_section_color($text_color,$bg_color)
+{
+    background-color:$bg_color;
+    color:$text_color;
+   
+}
+@mixin for_section_img($text_color,$bg)
+    {
+       
+               color: $text_color;
+               background:
+               {
+                   image:url($bg);
+                   repeat:no-repeat;
+                   position:top center;
+                   size:cover;
+               }
+}
+%for_section_universal
+{
+    padding: $insert 0;
+    display: flex;   
+    min-height: 512px;  
+}
+@mixin table{
+    @media screen and (max-width:768px){
+        @content;
+    }
+}
+@mixin phone{
+    @media screen and (max-width:515px){
+        @content;
+    }
+}

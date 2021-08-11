@@ -1,0 +1,31 @@
+    .about
+    {
+        @extend %for_section_universal;
+        @include for_section_color($color-blue, $color-white);
+        
+        .container
+        {
+            justify-content: space-between;
+
+            @include phone
+            {
+                flex-direction:column;
+                justify-content:center;
+                align-items: center;
+            }
+            
+
+
+           h2{
+               color:$color-siren;
+              }
+            }
+
+        &__item 
+        {
+            width: 45%;
+            color: $color-blue;
+        }
+            }
+            
+
