@@ -1,6 +1,45 @@
-.footer
-    {
-        @extend %for_section_universal;
-        @include for_section_color($color-white,$color-blue);
-        min-height: 512px / 2;
+.footer {
+    @extend %for_section_universal;
+    @include for_section_color($color-white, $color-blue);
+    min-height: 512px / 2;
+    color: $color-white;
+
+    .container {
+        justify-content: space-between;
+
+        @include table {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+        @include phone {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
     }
+
+
+
+    .about__item {
+        width: 40%;
+        color: $color-white;
+
+
+    }
+
+    .footer__container-about__item {
+        width: 213px;
+        height: 44px;
+        border: 1px solid $color-white;
+        text-transform: uppercase;
+        color: $color-white;
+        padding: 7px 30px 7px;
+    }
+
+
+}

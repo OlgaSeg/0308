@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
-.header, .about, .apps1, .contacts, .footer {
+.header, .about, .apps1, .apps2, .contacts, .footer {
   padding: 100px 0;
   display: flex;
   min-height: 512px; }
@@ -115,13 +115,35 @@ h2 {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
+  .apps1 .container {
+    justify-content: flex-end; }
+  .apps1__item {
+    width: 45%; }
 
-.apps1 {
+a {
+  text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 30px; }
+
+.apps2 {
   color: #FFFFFF;
   background-image: url("images/apps2.jpeg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
+  .apps2 .container {
+    justify-content: flex-end; }
+  .apps2__item {
+    width: 45%; }
+
+a {
+  text-transform: uppercase;
+  border: 1px solid #FFFFFF;
+  margin-top: 30px;
+  display: inline-block;
+  padding: 10px 30px; }
 
 .contacts {
   background-color: #FFFFFF;
@@ -142,6 +164,29 @@ h2 {
 .footer {
   background-color: #384C85;
   color: #FFFFFF;
-  min-height: 512px / 2; }
+  min-height: 512px / 2;
+  color: #FFFFFF; }
+  .footer .container {
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .footer .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+    @media screen and (max-width: 515px) {
+      .footer .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; } }
+  .footer .about__item {
+    width: 40%;
+    color: #FFFFFF; }
+  .footer .footer__container-about__item {
+    width: 213px;
+    height: 44px;
+    border: 1px solid #FFFFFF;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 7px 30px 7px; }
 
 /*# sourceMappingURL=style.css.map */
