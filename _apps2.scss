@@ -2,9 +2,12 @@
 {
 @extend %for_section_universal;
 @include for_section_img($color-white, 'images/apps2.jpeg');
+
+
 .container
 {
     justify-content:flex-end;
+    color:$color-white;
    
 }
 &__item {
@@ -12,7 +15,7 @@
 }
 }
 
-a
+.apps2 a
 {
     text-transform: uppercase;
     border:1px solid $color-white;

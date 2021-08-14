@@ -111,7 +111,7 @@ h2 {
 
 .apps1 {
   color: #FFFFFF;
-  background-image: url("images/about.jpeg");
+  background-image: url("images/apps1.jpeg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover; }
@@ -120,7 +120,7 @@ h2 {
   .apps1__item {
     width: 45%; }
 
-a {
+.apps1 a {
   text-transform: uppercase;
   border: 1px solid #FFFFFF;
   margin-top: 30px;
@@ -134,11 +134,12 @@ a {
   background-position: top center;
   background-size: cover; }
   .apps2 .container {
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    color: #FFFFFF; }
   .apps2__item {
     width: 45%; }
 
-a {
+.apps2 a {
   text-transform: uppercase;
   border: 1px solid #FFFFFF;
   margin-top: 30px;
